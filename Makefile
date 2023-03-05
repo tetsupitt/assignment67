@@ -1,5 +1,10 @@
 #! /usr/bin/env make
 
+all: mydict.html mydict.pdf
+
+mydict.pdf: mydict.md
+	pandoc $< -o $@
+
 mydict.html: mydict.md
 	pandoc $< -s --mathjax -f markdown+tex_math_dollars -t html -o $@
 

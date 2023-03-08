@@ -9,4 +9,4 @@ mydict.md: preamble.txt litReview.txt approach.txt results.txt conclusion.txt
 
 .PHONY: clean
 clean:
-	rm mydict.md
+	rm mydict.md mydict.html

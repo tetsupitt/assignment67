@@ -1,6 +1,6 @@
 #! /usr/bin/env make
 
-all: mydict.html mydict.pdf
+all: mydict.html mydict.pdf mydict.md
 
 mydict.pdf: mydict.md
 	pandoc $< -o $@
